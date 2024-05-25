@@ -3,6 +3,7 @@ const express = require('express');
 const cors = require('cors')
 const bodyParser = require('body-parser')
 const app = express();
+const serverless = require('serverless-http');
 app.use(cors());
 app.use(bodyParser.json());
 
@@ -71,3 +72,4 @@ app.listen(4000, () => {
     console.log("Server running on port 4000")
 })
 
+module.exports = serverless(app)

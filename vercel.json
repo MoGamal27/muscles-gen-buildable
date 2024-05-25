@@ -1,0 +1,13 @@
+{
+    "projects": {
+      "backend": {
+        "src": "./backend/server.js",
+        "use": "@vercel/node"
+      },
+      "frontend": {
+        "src": "./frontend",
+        "use": "@vercel/next"
+      }
+    }
+  }
+  
